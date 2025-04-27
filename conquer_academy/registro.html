@@ -1,179 +1,290 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="JM dclair" />
-    <link rel="stylesheet" href="" />
-    <meta
-      name="description" content="Conquer Academy. Registrate en nuestra academia."
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="img/D7D.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master en Inteligencia Artificial</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <!--iconos bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
     />
-    <title>Conquer Academy: Regístrate en nuestra academia.</title>
-
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="icon.png" />
-
-    <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#fafafa" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-   
     <header>
-      <h1>CONQUER ACADEMY: REGÍSTRATE EN NUESTRA ACADEMIA</h1>
-      <section>
-        <figure>
-          <img src="img/logo-conquerblocks-color.png" alt="Masteres online Conquer Blocks" width="" height="34">
-        </figure>
-      <nav>
-          <table>
-            <tr>
-              <td>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                </ul>
-              </td>
-              <td>
-                <ul>
-                <li><a href="quienes_somos.html">Quiénes somos</a></li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-              <li><a href="cursos.html" target="_parent">Cursos</a></li>
+      <!--Barra de navegación con el logo brand-->
+      <nav class="navbar navbar-expand-md bg-light shadow sticky-top">
+        <div class="container-fluid">
+          <a href="/index.html" class="navbar-brand d-flex align-items-center">
+            <img
+              src="/img/logo-conquerblocks-color.png"
+              alt="Conquer logo"
+              class="logo"
+              height="34"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="quienes_somos.html"
+                  >Quienes Somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-          </td>
-          <td>
-            <ul>
-            <li><a href="blog.html" target="_parent">Blog</a></li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-          <li>Registro</li>
-        </ul>
-        </td>
-        <td>
-          <ul>
-          <li><a href="login.html" target="_parent">Login</a></li>
-        </ul>
-        </td>
-        <td>
-          <ul>
-          <li><a href="contacto.html" target="_parent">Contacto</a></li>
-        </ul>
-        </td>
-             
-      </tr>
-          </table>
+          </div>
+        </div>
       </nav>
-    </section>
-    <hr>
     </header>
 
-  <main>
-    <h2>
-      Por favor, cumplimente el siguiente formulario para completar el registro.
-    </h2>
+    <main>
+      <!-- Sección de registro -->
+      <h1 class="h-1 my-5">
+        Por favor, cumplimente el siguiente formulario para completar el
+        registro.
+      </h1>
+      <!-- Formulario de registro -->
+      <section class="formulario_registro">
+        <section class="py-5">
+          <div class="container">
+            <fieldset class="border p-4 rounded shadow">
+              <legend class="w-auto px-3">Formulario de registro</legend>
+              <form
+                action="https://www.registroexitoso.es"
+                method="post"
+                name="formulario de registro"
+                enctype="multipart/form-data"
+                autocomplete="on"
+              >
+                <div class="mb-3">
+                  <label for="nombreCompleto" class="form-label"
+                    >Nombre Completo</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="nombreCompleto"
+                    name="nombre_completo"
+                    placeholder="Nombre y apellidos"
+                    required
+                  />
+                </div>
 
-    <section>
-      <fieldset>
-      <legend>Formulario de registro</legend>
-        <form action="https://www.registroexitoso.es" method="post" name="formulario de registro" enctype="multipart/form-data" autocomplete="on" >
-          <p>
-          <label for="nombre">Nombre completo:</label>
-          <input type="text" name="nombre" id="nombre" maxlength="50" required>
-        </p>
-        <p>
-          <label for="born">Fecha de nacimiento:</label>
-          <input type="date" name="fecha_nacimeinto" id="born" required>
-        </p> 
-        <p>
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" required>
-        </p>
-        <p>
-          <label for="direc">Dirección:</label>
-          <input type="text" name="direccion" id="direc" required>
-        </p>
-        <p>
-          <label for="url">Página web:</label>
-          <input type="url" name="web" id="url">
-        </p>
-        <p>
-          <label for="foto">Foto:</label>
-          <input type="file" name="foto" id="foto" required>
-        </p> 
-        <p>
-          <label for="biografia">Su biografía:</label>
-        </p>
-        <textarea name="biografia" id="biografia" rows="10" cols="50"></textarea>
-        <br>
-        <button>Enviar formulario</button>   
-        </form>
-      </fieldset>
-    </section>
-    
-  </main>
-  <footer>
-    <hr>
-      <header>
-        <section>
+                <div class="mb-3">
+                  <label for="born" class="form-label"
+                    >Fecha de nacimiento</label
+                  >
+                  <input
+                    type="date"
+                    name="fecha_nacimiento"
+                    id="born"
+                    class="form-control"
+                    required
+                  />
+                </div>
 
-          <figure>
-          <p><img src="img/logo-conquerblocks-footer.png" alt="logo Conquer Blocks" width="165" height="68">
-            <figcaption>Másteres de formación online</figcaption>
-          </p>      
-          </figure>
+                <div class="mb-3">
+                  <label for="FormControlInput1" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="FormControlInput1"
+                    name="email"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
 
+                <div class="mb-3">
+                  <label for="url" class="form-label">Página web</label>
+                  <input
+                    type="url"
+                    class="form-control"
+                    name="web"
+                    id="url"
+                    placeholder="www.mipagina.com"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="formFile" class="form-label"
+                    >Seleccione un archivo</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="formFile"
+                    name="archivo"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="FormControlTextarea1" class="form-label"
+                    >Su biografía</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="FormControlTextarea1"
+                    name="biografia"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="text-start">
+                  <button type="submit" class="btn btn-primary">
+                    Enviar formulario
+                  </button>
+                </div>
+              </form>
+            </fieldset>
+          </div>
         </section>
-
-        <section>      
-          <nav id="legal">
-            <a href="aviso_legal.html" target="_top">Aviso Legal - Terminos y condiciones - Política de Privacidad - Política de cookies</a>
-          </nav>
-          <img src="img/copyRight.png" alt="Copy Right Conquer Blocks 2024">
-          <p>
-            ---
-          </p>
-        </section>
-      </header> 
-  
-      <section>
-        <h3>
-          Mapa web del sitio
-        </h3>
-        <ul>
-          <li>
-            <a href="index.html" target="_blank">Home</a>
-          </li>
-          <li>
-            <a href="quienes_somos.html" target="_blank">Quienes somos</a>        
-          </li>
-          <li><a href="cursos.html" target="_blank">Cursos</a>
-            <ul>
-              <li><a href="/cursos/curso1.html" target="_blank">Curso desarrollo Fullstack</a></li>
-              <li><a href="/cursos/curso2.html" target="_blank">Curso desaroollo Blockchain</a></li>
-            </ul>
-          </li>
-          <li><a href="blog.html" target="_blank">Blog</a>
-            <ul>
-              <li><a href="/noticias/noticia1.html" target="_blank">Fullstack hoy en día</a></li>
-              <li><a href="/noticias/noticia2.html">Fullstack Marker</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="registro.html" target="_blank">Registro</a>
-          </li>
-          <li>
-            <a href="login.html" target="_blank">Login</a>
-          </li>
-          <li>
-            <a href="contacto.html" target="_blank">Contacto</a>
-          </li>
-        </ul>
       </section>
-  </footer>
+    </main>
+
+    <footer>
+      <!-- Sección del mapa del sitio -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <!-- Primera columna:  header: Logo  -->
+            <div class="col-md-4">
+              <section>
+                <figure>
+                  <p>
+                    <img
+                      src="img/logo-conquerblocks-footer.svg"
+                      alt="logo Conquer Blocks"
+                      width="165"
+                      height="68"
+                    />
+                    <figcaption>Másteres de formación online</figcaption>
+                  </p>
+                </figure>
+
+                <img
+                  src="img/copyRight.png"
+                  alt="Copy Right Conquer Blocks 2024"
+                />
+              </section>
+            </div>
+
+            <!-- Segunda columna: Mapa del sitio -->
+            <div class="col-md-4">
+              <h3 class="text-start mb-4">Mapa web del sitio</h3>
+              <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li>
+                  <a href="quienes_somos.html" target="_blank">Quienes somos</a>
+                </li>
+                <li>
+                  <a href="cursos.html" target="_blank">Cursos</a>
+                  <ul>
+                    <li>
+                      <a href="curso1.html" target="_blank"
+                        >Master desarrollo Fullstack</a
+                      >
+                    </li>
+                    <li>
+                      <a href="curso2.html" target="_blank"
+                        >Master desarrollo Blockchain</a
+                      >
+                    </li>
+                    <li>
+                      <a href="curso3.html" target="_blank"
+                        >Master desarrollo Inteligencia Artificial</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html" target="_blank">Blog</a>
+                  <ul>
+                    <li>
+                      <a href="noticia1.html" target="_blank"
+                        >Fullstack hoy en día</a
+                      >
+                    </li>
+                    <li><a href="noticia2.html">Fullstack Marketer</a></li>
+                  </ul>
+                </li>
+                <li><a href="registro.html" target="_blank">Registro</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+              </ul>
+            </div>
+
+            <!-- Tercera columna: Información adicional -->
+            <div class="col-md-4">
+              <p><strong>Legal</strong></p>
+              <nav>
+                <a href="aviso_legal.html" target="_top">Aviso Legal</a><br />
+                <a href="terminos.html" target="_top">Términos y condiciones</a
+                ><br />
+                <a href="politica_privacidad.html" target="_top"
+                  >Política de Privacidad</a
+                ><br />
+                <a href="politica_cookies.html" target="_top"
+                  >Política de cookies</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Botón flotante para ir al top -->
+    <a
+      href="#"
+      class="btn btn-primary position-fixed bottom-0 end-0 m-3 scroll-to-top"
+      id="scrollToTopBtn"
+    >
+      <!-- Flecha hacia arriba con Bootstrap Icons -->
+      <i class="bi bi-arrow-up"></i>
+      <!-- Icono de flecha hacia arriba -->
+    </a>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

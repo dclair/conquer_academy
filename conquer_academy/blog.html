@@ -1,153 +1,372 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Descubre en nuestro blog las noticias más relevantes del sector">
-    <meta name="theme-color" content="#fafafa">
-    <meta name="author" content="JM dclair" />
-    <title>Conquer Academy: Blogs y Noticias</title>
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="manifest" href="site.webmanifest">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="img/D7D.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master en Inteligencia Artificial</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <!--iconos bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    
     <header>
-      <h1>CONQUER ACADEMY: Blogs y Noticias más relevantes del sector.</h1>
-      <section>
-        <figure>
-          <img src="img/logo-conquerblocks-color.png" alt="Masteres online Conquer Blocks" width="" height="34">
-        </figure>
-      <nav>
-          <table>
-            <tr>
-              <td>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                </ul>
-              </td>
-              <td>
-                <ul>
-                <li><a href="quienes_somos.html" target="_parent">Quiénes somos</a></li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-              <li><a href="cursos.html" target="_parent">Cursos</a></li>
+      <!--Barra de navegación con el logo brand-->
+      <nav class="navbar navbar-expand-md bg-light shadow sticky-top">
+        <div class="container-fluid">
+          <a href="/index.html" class="navbar-brand d-flex align-items-center">
+            <img
+              src="/img/logo-conquerblocks-color.png"
+              alt="Conquer logo"
+              class="logo"
+              height="34"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="quienes_somos.html"
+                  >Quienes Somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-          </td>
-          <td>
-            <ul>
-            <li>Blog</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-          <li><a href="registro.html" target="_parent">Registro</a></li>
-        </ul>
-        </td>
-        <td>
-          <ul>
-          <li><a href="login.html" target="_parent">Login</a></li>
-        </ul>
-        </td>
-        <td>
-          <ul>
-          <li><a href="contacto.html" target="_parent">Contacto</a></li>
-        </ul>
-        </td>
-             
-      </tr>
-          </table>
+          </div>
+        </div>
       </nav>
-    </section>
-    <hr>
     </header>
 
-  <main>
-    <section>
-      <article>
-        <figure>
-          <a href="/noticias/noticia1.html"><img src="img/perfiles_junior.jpg" alt="perfiles junior"></a>
-          <figcaption>Desarrollo Full-Stack para perfiles junior</figcaption>
-        </figure>
-      </article>
-    </section>
+    <main>
+      <!-- Sección descripción del curso -->
+      <section class="blog py-5">
+        <div class="container">
+          <h1 class="h1 text-center mb-5">
+            CONQUER ACADEMY: Blogs y Noticias más relevantes del sector.
+          </h1>
+          <!-- entradas/tarjetas del blog-->
+          <!-- primera fila del blog-->
+          <div class="row justify-content-center mb-lg-5">
+            <div class="col-md-3 mb-4 d-flex">
+              <a href="" class="item_blog-link">
+                <div class="card shadow rounded-4">
+                  <img
+                    src="img/noticia2.jpg"
+                    class="card-img-top w-75 h-75 ms-auto me-auto mt-4"
+                    alt="Encontrar trabajo"
+                  />
+                  <div class="card-body text-start">
+                    <h3 class="card-title">
+                      Desarrollo Full-Stack para perfiles junior
+                    </h3>
+                    <p class="card-text">
+                      En el dinámico mundo del desarrollo web, el rol de
+                      desarrollador Full Stack ha emergido como una carrera.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
 
-    <section>
-      <article>
-        <figure>
-          <a href="/noticias/noticia2.html"><img src="img/desarrollo_marketer.jpeg" alt="perfiles junior"></a>
-          <figcaption>Desarrollo Full-Stack Marketer</figcaption>
-        </figure>
-      </article>
-    </section>
-    
-  </main>
+            <div class="col-md-3 mb-4 d-flex">
+              <a href="" class="item_blog-link">
+                <div class="card shadow rounded-4">
+                  <img
+                    src="img/noticia3.jpg"
+                    class="card-img-top w-75 h-75 ms-auto me-auto mt-4"
+                    alt="Encontrar trabajo"
+                  />
+                  <div class="card-body text-start">
+                    <h3 class="card-title">
+                      Desarrollo Full-Stack Marketer:Un Híbrido Innovador en la
+                      era Digital
+                    </h3>
+                    <p class="card-text">
+                      En el vertiginoso mundo del desarrollo web y el marketing
+                      digital, emerge una figura revolucionaria: el
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
 
-  <footer>
-    <hr>
-    <header>
+            <div class="col-md-3 mb-4 d-flex">
+              <a href="" class="item_blog-link">
+                <div class="card shadow rounded-4">
+                  <img
+                    src="img/noticia1.jpg"
+                    class="card-img-top w-75 h-75 ms-auto me-auto mt-4"
+                    alt="Encontrar trabajo"
+                  />
+                  <div class="card-body text-start">
+                    <h3 class="card-title">
+                      Bits y Bytes: La Base del Mundo Digital
+                    </h3>
+                    <p class="card-text">
+                      Todo lo que hacemos en el mundo digital, desde enviar un
+                      mensaje de texto hasta ver un video en alta definición,
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-4 d-flex">
+              <a href="" class="item_blog-link">
+                <div class="card shadow rounded-4">
+                  <img
+                    src="img/noticia5.jpg"
+                    class="card-img-top w-75 h-75 ms-auto me-auto mt-4"
+                    alt="Encontrar trabajo"
+                  />
+                  <div class="card-body text-start">
+                    <h3 class="card-title">
+                      ¿Qué es un Diagrma de Flujo y Por qué es tan Útil?
+                    </h3>
+                    <p class="card-text">
+                      Un *diagrama de flujo* es una representación visual de un
+                      proceso mediante símbolos y flechas que indican el flujo y
+                      el
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- segunda fila del blog-->
+          <div class="row justify-content-center mb-lg-5">
+            <div class="col-md-3 mb-4 d-flex">
+              <a href="" class="item_blog-link">
+                <div class="card shadow rounded-4">
+                  <img
+                    src="img/noticia6.jpg"
+                    class="card-img-top w-75 h-75 ms-auto me-auto mt-4"
+                    alt="Encontrar trabajo"
+                  />
+                  <div class="card-body text-start">
+                    <h3 class="card-title">
+                      ¿Qué es un Algoritmo y por qué es tan importante?
+                    </h3>
+                    <p class="card-text">
+                      Un *algoritmo* es un conjunto de instrucciones ordenadas y
+                      definidas para resolver un problema o realizar una tarea.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-4 d-flex">
+              <a href="" class="item_blog-link">
+                <div class="card shadow rounded-4">
+                  <img
+                    src="img/noticia7.jpg"
+                    class="card-img-top w-75 h-75 ms-auto me-auto mt-4"
+                    alt="Encontrar trabajo"
+                  />
+                  <div class="card-body text-start">
+                    <h3 class="card-title">
+                      Lenguaje Natural y Programación: ¿Cómo lo entienden las
+                      Máquinas?
+                    </h3>
+                    <p class="card-text">
+                      El lenguaje natural es el conjunto de idiomas que
+                      utilizamos los humanos para comunicarnos. A diferencia de
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-4 d-flex">
+              <a href="" class="item_blog-link">
+                <div class="card shadow rounded-4">
+                  <img
+                    src="img/noticia4.png"
+                    class="card-img-top w-75 h-75 ms-auto me-auto mt-4"
+                    alt="Encontrar trabajo"
+                  />
+                  <div class="card-body text-start">
+                    <h3 class="card-title">
+                      Las tecnologías del desarrollo Full-stack: Lo que debes
+                      saber
+                    </h3>
+                    <p class="card-text">
+                      El atractivo del desarrollo Full Stack radica en su
+                      enfoque holístico, que abarca tanto el frontend como el
+                      backend,
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-3 mb-4 d-flex">
+              <a href="" class="item_blog-link">
+                <div class="card shadow rounded-4">
+                  <img
+                    src="img/fronted-backend.png"
+                    class="card-img-top w-75 h-75 ms-auto me-auto mt-4"
+                    alt="Encontrar trabajo"
+                  />
+                  <div class="card-body text-start">
+                    <h3 class="card-title">
+                      Backend vs Fronted: Explorando las Distinciones
+                      Fundamnetales
+                    </h3>
+                    <p class="card-text">
+                      En el desarrollo web, la distinción entre backend y
+                      frontend es fundamental, delineando dos
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Sección del mapa del sitio -->
       <section>
+        <div class="container">
+          <div class="row">
+            <!-- Primera columna:  header: Logo  -->
+            <div class="col-md-4">
+              <section>
+                <figure>
+                  <p>
+                    <img
+                      src="img/logo-conquerblocks-footer.svg"
+                      alt="logo Conquer Blocks"
+                      width="165"
+                      height="68"
+                    />
+                    <figcaption>Másteres de formación online</figcaption>
+                  </p>
+                </figure>
 
-        <figure>
-        <p><img src="img/logo-conquerblocks-footer.png" alt="logo Conquer Blocks" width="165" height="68">
-          <figcaption>Másteres de formación online</figcaption>
-        </p>      
-        </figure>
+                <img
+                  src="img/copyRight.png"
+                  alt="Copy Right Conquer Blocks 2024"
+                />
+              </section>
+            </div>
 
+            <!-- Segunda columna: Mapa del sitio -->
+            <div class="col-md-4">
+              <h3 class="text-start mb-4">Mapa web del sitio</h3>
+              <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li>
+                  <a href="quienes_somos.html" target="_blank">Quienes somos</a>
+                </li>
+                <li>
+                  <a href="cursos.html" target="_blank">Cursos</a>
+                  <ul>
+                    <li>
+                      <a href="curso1.html" target="_blank"
+                        >Master desarrollo Fullstack</a
+                      >
+                    </li>
+                    <li>
+                      <a href="curso2.html" target="_blank"
+                        >Master desarrollo Blockchain</a
+                      >
+                    </li>
+                    <li>
+                      <a href="curso3.html" target="_blank"
+                        >Master desarrollo Inteligencia Artificial</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html" target="_blank">Blog</a>
+                  <ul>
+                    <li>
+                      <a href="noticia1.html" target="_blank"
+                        >Fullstack hoy en día</a
+                      >
+                    </li>
+                    <li><a href="noticia2.html">Fullstack Marketer</a></li>
+                  </ul>
+                </li>
+                <li><a href="registro.html" target="_blank">Registro</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+              </ul>
+            </div>
+
+            <!-- Tercera columna: Información adicional -->
+            <div class="col-md-4">
+              <p><strong>Legal</strong></p>
+              <nav>
+                <a href="aviso_legal.html" target="_top">Aviso Legal</a><br />
+                <a href="terminos.html" target="_top">Términos y condiciones</a
+                ><br />
+                <a href="politica_privacidad.html" target="_top"
+                  >Política de Privacidad</a
+                ><br />
+                <a href="politica_cookies.html" target="_top"
+                  >Política de cookies</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
       </section>
-
-      <section>      
-        <nav id="legal">
-          <a href="aviso_legal.html" target="_top">Aviso Legal - Terminos y condiciones - Política de Privacidad - Política de cookies</a>
-        </nav>
-        <img src="img/copyRight.png" alt="Copy Right Conquer Blocks 2024">
-        <p>
-          ---
-        </p>
-      </section>
-    </header> 
-
-    <section>
-      <h3>
-        Mapa web del sitio
-      </h3>
-      <ul>
-        <li>
-          <a href="index.html" target="_blank">Home</a>
-        </li>
-        <li>
-          <a href="quienes_somos.html" target="_blank">Quienes somos</a>        
-        </li>
-        <li><a href="cursos.html" target="_blank">Cursos</a>
-          <ul>
-            <li><a href="curso1.html" target="_blank">Curso desarrollo Fullstack</a></li>
-            <li><a href="curso2.html" target="_blank">Curso desaroollo Blockchain</a></li>
-          </ul>
-        </li>
-        <li><a href="blog.html" target="_blank">Blog</a>
-          <ul>
-            <li><a href="/noticias/noticia1.html" target="_blank">Fullstack hoy en día</a></li>
-            <li><a href="/noticias/noticia2.html">Fullstack Marker</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="registro.html" target="_blank">Registro</a>
-        </li>
-        <li>
-          <a href="login.html" target="_blank">Login</a>
-        </li>
-        <li>
-          <a href="contacto.html" target="_blank">Contacto</a>
-        </li>
-      </ul>
-    </section>
-  </footer>
+    </footer>
+    <!-- Botón flotante para ir al top -->
+    <a
+      href="#"
+      class="btn btn-primary position-fixed bottom-0 end-0 m-3 scroll-to-top"
+      id="scrollToTopBtn"
+    >
+      <!-- Flecha hacia arriba con Bootstrap Icons -->
+      <i class="bi bi-arrow-up"></i>
+      <!-- Icono de flecha hacia arriba -->
+    </a>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
