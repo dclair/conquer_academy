@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="img/D7D.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,8 +23,8 @@
       rel="stylesheet"
     />
   </head>
-<body>
-<header>
+  <body>
+    <header>
       <!--Barra de navegación con el logo brand-->
       <nav class="navbar navbar-expand-md bg-light shadow sticky-top">
         <div class="container-fluid">

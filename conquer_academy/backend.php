@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js" lang="es">
-  <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="img/D7D.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Master en Inteligencia Artificial</title>
+    <title>Backend</title>
     <link rel="stylesheet" href="./src/style.css" />
     <!--iconos bootstrap-->
     <link
@@ -23,9 +23,8 @@
       rel="stylesheet"
     />
   </head>
-
-  <body>
-    <header>
+<body>
+    <header>    
       <!--Barra de navegación con el logo brand-->
       <nav class="navbar navbar-expand-md bg-light shadow sticky-top">
         <div class="container-fluid">
@@ -77,111 +76,8 @@
     </header>
 
     <main>
-      <!-- Sección de registro -->
-      <h1 class="h-1 my-4 px-5">
-        Por favor, cumplimente el siguiente formulario para completar el
-        registro.
-      </h1>
-      <!-- Formulario de registro -->
-      <section class="formulario_registro">
-        <section class="py-3">
-          <div class="container">
-            <fieldset class="border p-4 rounded-5 shadow bg-light w-50">
-              <legend class="w-auto px-3">Formulario de registro</legend>
-              <form
-                action="https://www.registroexitoso.es"
-                method="post"
-                name="formulario de registro"
-                enctype="multipart/form-data"
-                autocomplete="on"
-              >
-                <div class="mb-3">
-                  <label for="nombreCompleto" class="form-label"
-                    >Nombre Completo</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="nombreCompleto"
-                    name="nombre_completo"
-                    placeholder="Nombre y apellidos"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="born" class="form-label"
-                    >Fecha de nacimiento</label
-                  >
-                  <input
-                    type="date"
-                    name="fecha_nacimiento"
-                    id="born"
-                    class="form-control"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="FormControlInput1" class="form-label"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="FormControlInput1"
-                    name="email"
-                    placeholder="name@example.com"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="url" class="form-label">Página web</label>
-                  <input
-                    type="url"
-                    class="form-control"
-                    name="web"
-                    id="url"
-                    placeholder="www.mipagina.com"
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="formFile" class="form-label"
-                    >Seleccione un archivo</label
-                  >
-                  <input
-                    class="form-control"
-                    type="file"
-                    id="formFile"
-                    name="archivo"
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="FormControlTextarea1" class="form-label"
-                    >Su biografía</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="FormControlTextarea1"
-                    name="biografia"
-                    rows="3"
-                    required
-                  ></textarea>
-                </div>
-
-                <div class="text-start">
-                  <button type="submit" class="btn btn-primary">
-                    Enviar formulario
-                  </button>
-                </div>
-              </form>
-            </fieldset>
-          </div>
-        </section>
-      </section>
+    
+        <h1>Su solicitud se ha envíado correctamente</h1>
     </main>
 
     <footer>
@@ -275,16 +171,5 @@
         </div>
       </section>
     </footer>
-    <!-- Botón flotante para ir al top -->
-    <a
-      href="#"
-      class="btn btn-primary position-fixed bottom-0 end-0 m-3 scroll-to-top"
-      id="scrollToTopBtn"
-    >
-      <!-- Flecha hacia arriba con Bootstrap Icons -->
-      <i class="bi bi-arrow-up"></i>
-      <!-- Icono de flecha hacia arriba -->
-    </a>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+</body>
 </html>

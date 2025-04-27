@@ -184,6 +184,23 @@ li{
     transform: scale(1.1);
     transition: all 0.3s;
 }
-
+/* --- Estilos para el formulario login y contacto --- */
+/* Verde si el input tiene texto válido */
+.form-control:valid{
+    background-color:var(--color-green);
+  }
+  /* 🔶 Naranja si el campo es inválido (vacío)*/
+  input:focus:invalid {
+    background-color: rgb(252, 205, 118);
+  }
+  textarea:focus:invalid {
+    background-color: rgb(252, 205, 118);
+  }
+  
+  body {
+    background: url('/img/fondo_principal.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.9;
+  }
 
 

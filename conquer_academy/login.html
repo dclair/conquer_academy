@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="img/D7D.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Master en Inteligencia Artificial</title>
+    <title>Iniciar Sesión | Sign In</title>
     <link rel="stylesheet" href="./src/style.css" />
     <!--iconos bootstrap-->
     <link
@@ -20,6 +20,10 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
   </head>
@@ -78,72 +82,48 @@
 
     <main>
       <!-- Sección login -->
-      <!DOCTYPE html>
-      <html lang="es">
-        <head>
-          <meta charset="UTF-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <title>Inicio de Sesión</title>
-          <!-- Bootstrap CSS -->
-          <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-          />
-        </head>
-        <body>
-          <div class="container mt-5">
-            <div class="row justify-content-center">
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header text-center">
-                    <h3>Iniciar Sesión</h3>
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header text-center">
+                <h3>Iniciar Sesión</h3>
+              </div>
+              <div class="card-body">
+                <form action="login.php" method="POST">
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Usuario</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      name="username"
+                      placeholder="Introduce tu usuario"
+                      required
+                    />
                   </div>
-                  <div class="card-body">
-                    <form action="login.php" method="POST">
-                      <div class="mb-3">
-                        <label for="username" class="form-label">Usuario</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="username"
-                          name="username"
-                          placeholder="Introduce tu usuario"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="password" class="form-label"
-                          >Contraseña</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="password"
-                          name="password"
-                          placeholder="Introduce tu contraseña"
-                          required
-                        />
-                      </div>
-                      <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">
-                          Iniciar sesión
-                        </button>
-                      </div>
-                    </form>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      placeholder="Introduce tu contraseña"
+                      required
+                    />
                   </div>
-                </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">
+                      Iniciar sesión
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-
-          <!-- Bootstrap JS y dependencias -->
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-        </body>
-      </html>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -237,16 +217,7 @@
         </div>
       </section>
     </footer>
-    <!-- Botón flotante para ir al top -->
-    <a
-      href="#"
-      class="btn btn-primary position-fixed bottom-0 end-0 m-3 scroll-to-top"
-      id="scrollToTopBtn"
-    >
-      <!-- Flecha hacia arriba con Bootstrap Icons -->
-      <i class="bi bi-arrow-up"></i>
-      <!-- Icono de flecha hacia arriba -->
-    </a>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
