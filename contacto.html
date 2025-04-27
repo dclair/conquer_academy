@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/D7D-Bzs_WuGW.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <!--iconos bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/main-BvY50kmG.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-9XA2FUQV.css">
+  </head>
+
+  <body>
+    <header>
+      <!--Barra de navegación con el logo brand-->
+      <nav class="navbar navbar-expand-md bg-light shadow sticky-top">
+        <div class="container-fluid">
+          <a href="/index.html" class="navbar-brand d-flex align-items-center">
+            <img
+              src="./assets/logo-conquerblocks-color-eWjKbj44.png"
+              alt="Conquer logo"
+              class="logo"
+              height="34"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="quienes_somos.html"
+                  >Quienes Somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contacto">
+        <section class="contacto_header">
+          <h1 class="h1 mt-3 mb-3 py-2 text-center">
+            CONTACTA CON NOSOTROS.<br />
+            AGENDA UNA LLAMADA.
+          </h1>
+          <p class="lead text-center">
+            CONQUERZ CREA ESCUELAS ONLINE QUE DEMOCRATIZAN EL APRENDIZAJE DE
+            NUEVAS HABILIDADES.
+          </p>
+
+          <div class="container mt-3 mb-3">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card shadow-sm border-info bg-light">
+                  <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Nuestros datos</h2>
+                    <ul class="list-unstyled">
+                      <li class="mb-3">
+                        <strong>Empresa:</strong> ConquerBlocker SLU
+                      </li>
+                      <li class="mb-3">
+                        <strong>Dirección:</strong> Avda. de Fullstack, 1001 -
+                        365-7-24 San Fronted (.Com)
+                      </li>
+                      <li class="mb-3">
+                        <strong>Email:</strong>
+                        <a
+                          href="mailto:email@email.com"
+                          class="text-decoration-none"
+                          >email@email.com</a
+                        >
+                      </li>
+                      <li>
+                        <strong>Teléfono:</strong>
+                        <a href="tel:+346222666221" class="text-decoration-none"
+                          >+34 622 266 6221</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección del formulario de contacto -->
+        <section class="contact-form py-2">
+          <div class="container">
+            <div class="row justify-content-center align-items-start mb-5">
+              <!-- Formulario de contacto -->
+              <div class="col-md-6">
+                <form
+                  action="backend.php"
+                  method="POST"
+                  enctype="multipart/form-data"
+                  class="border rounded-4 p-4 shadow bg-light"
+                  style="width: 100%"
+                >
+                  <h2 class="text-center mb-4">Contáctanos</h2>
+
+                  <!-- Nombre completo -->
+                  <div class="mb-3">
+                    <label for="nombreCompleto" class="form-label"
+                      >Nombre completo</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombreCompleto"
+                      name="nombreCompleto"
+                      required
+                    />
+                  </div>
+
+                  <!-- Email -->
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo electrónico</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+
+                  <!-- Mensaje -->
+                  <div class="mb-3">
+                    <label for="mensaje" class="form-label"
+                      >¿En qué podemos ayudarte?</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="mensaje"
+                      name="mensaje"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <!-- Adjuntar archivo -->
+                  <div class="mb-3">
+                    <label for="archivo" class="form-label"
+                      >Adjuntar archivo (opcional)</label
+                    >
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="archivo"
+                      name="archivo"
+                    />
+                  </div>
+
+                  <!-- Botón de envío -->
+                  <div class="mt-4">
+                    <button
+                      type="submit"
+                      class="btn btn-primary px-5 rounded-4"
+                    >
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Mapa de Google a la derecha -->
+              <div class="col-md-6 mt-4 mt-md-0">
+                <div class="border rounded-4 shadow bg-white p-2">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56338.55785742836!2d-15.498676475319515!3d28.050142952636406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40974adf708ad9%3A0xb7445485f25b5acd!2sCENTRO%20DE%20TERAPIAS%20MARIA%20DEL%20PINO!5e0!3m2!1ses!2ses!4v1745756045928!5m2!1ses!2ses"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Sección del mapa del sitio -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <!-- Primera columna:  header: Logo  -->
+            <div class="col-md-4">
+              <section>
+                <figure>
+                  <p>
+                    <img
+                      src="./assets/logo-conquerblocks-footer-BrffDbrs.svg"
+                      alt="logo Conquer Blocks"
+                      width="165"
+                      height="68"
+                    />
+                    <figcaption>Másteres de formación online</figcaption>
+                  </p>
+                </figure>
+
+                <img
+                  src="./assets/copyRight-YrbwIiXX.png"
+                  alt="Copy Right Conquer Blocks 2024"
+                />
+              </section>
+            </div>
+
+            <!-- Segunda columna: Mapa del sitio -->
+            <div class="col-md-4">
+              <h3 class="text-start mb-4">Mapa web del sitio</h3>
+              <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li>
+                  <a href="quienes_somos.html" target="_blank">Quienes somos</a>
+                </li>
+                <li>
+                  <a href="cursos.html" target="_blank">Cursos</a>
+                  <ul>
+                    <li>
+                      <a href="curso1.html" target="_blank"
+                        >Master desarrollo Fullstack</a
+                      >
+                    </li>
+                    <li>
+                      <a href="curso2.html" target="_blank"
+                        >Master desarrollo Blockchain</a
+                      >
+                    </li>
+                    <li>
+                      <a href="curso3.html" target="_blank"
+                        >Master desarrollo Inteligencia Artificial</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html" target="_blank">Blog</a>
+                  <ul>
+                    <li>
+                      <a href="noticia1.html" target="_blank"
+                        >Fullstack hoy en día</a
+                      >
+                    </li>
+                    <li><a href="noticia2.html">Fullstack Marketer</a></li>
+                  </ul>
+                </li>
+                <li><a href="registro.html" target="_blank">Registro</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+              </ul>
+            </div>
+
+            <!-- Tercera columna: Información adicional -->
+            <div class="col-md-4">
+              <p><strong>Legal</strong></p>
+              <nav>
+                <a href="aviso_legal.html" target="_top">Aviso Legal</a><br />
+                <a href="terminos.html" target="_top">Términos y condiciones</a
+                ><br />
+                <a href="politica_privacidad.html" target="_top"
+                  >Política de Privacidad</a
+                ><br />
+                <a href="politica_cookies.html" target="_top"
+                  >Política de cookies</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Botón flotante para ir al top -->
+    <a
+      href="#"
+      class="btn btn-primary position-fixed bottom-0 end-0 m-3 scroll-to-top"
+      id="scrollToTopBtn"
+    >
+      <!-- Flecha hacia arriba con Bootstrap Icons -->
+      <i class="bi bi-arrow-up"></i>
+      <!-- Icono de flecha hacia arriba -->
+    </a>
+  </body>
+</html>
