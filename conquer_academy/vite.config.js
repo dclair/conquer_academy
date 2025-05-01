@@ -13,8 +13,8 @@ export default defineConfig({
         curso3: './curso3.html',
         blog: './blog.html',
         login: './login.html',
-        login1: './login.php',
-        backend: './backend.php',
+        login2: './login2.html',
+        backend: './backend.html',
         quienes_somos: './quienes_somos.html',
         registro: './registro.html',
 
